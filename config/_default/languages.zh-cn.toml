@@ -7,7 +7,6 @@ title = "wu的博客"
 
 [params.author]
 name = "wu"
-image = "img/author.webp"
 headline = "知行合一，日拱一卒"
 bio = "知行合一，日拱一卒"
 links = [

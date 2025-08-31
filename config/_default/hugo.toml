@@ -4,6 +4,7 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
 timeZone = "Asia/Shanghai"
+theme = "blowfish"
 
 enableRobotsTXT = true
 summaryLength = 0
@@ -21,7 +22,7 @@ lastmod = ["lastmod", ":fileModTime"]
 
 [[cascade]]
 isCJKLanguage = true
-_target.lang = "zh-Hans"
+_target.lang = "zh-cn"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
