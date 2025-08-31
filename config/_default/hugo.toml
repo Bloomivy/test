@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://377233861.xyz"
+baseURL = "https://ewadawdaw.netlify.app/"
 defaultContentLanguage = "zh-cn"
 # disableLanguages = ['it'] #to allow translation work requiring shipping to production
 disableLanguages = ['en']
