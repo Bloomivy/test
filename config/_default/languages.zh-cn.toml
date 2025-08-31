@@ -2,15 +2,24 @@ languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 1
 contentDir = "content"
-
-title = "wu的博客"
+title = "ivybloom"
 
 [params.author]
-name = "wu"
-headline = "知行合一，日拱一卒"
-bio = "知行合一，日拱一卒"
+displayName = "简体中文"
+isoCode = "zh-cn"
+rtl = false
+dateFormat = "Jan 2, 2006"
+# logo = "images/logo.png"
+# secondaryLogo
+name = "ivybloom"
+image = "img/author.webp"
+description = "机会总是垂青于有准备的人！"
+# headline = "u can see me"
+# bio = "u can see me"
 links = [
-    { email = "mailto:huan@huan666.de" },
-    { github = "https://github.com/Huan-zhaojun" },
-    { linuxdo = "https://linux.do/u/huan/summary" }
+    { email = "mailto:ivybloom2083@gmail.com" },
+    { github = "https://github.com/Bloomivy" },
+    { }
 ]
+
+# copyright = "© 2006 - { year } <span class='inline-block'><a href='/copyright/' target='_blank'>377233861.xyz</a> All Rights Reserved</span>. <span class='inline-block'><a href='https://beian.miit.gov.cn/' target='_blank'>浙ICP备16031768号-2</a></span>"
