@@ -1,7 +1,7 @@
 <!-- anti mirror -->
 <script>
   (function() {
-    // Domain whitelist
+    // Domain whitelist (entries may be base64-encoded or plain strings)
     var encodedValidDomains = [
       'ZWFsbGlvbi5jb20=',
       'd3d3LmVhbGxpb24uY29t',
@@ -9,12 +9,20 @@
       'MTI3LjAuMC4x',
       'MTkyLjE2OC4wLjU=',
       'dGVzdC5lYWxsaW9uLmNvbQ==',
-      'YmxvZy5lYWxsaW9uLmNvbQ=='
+      'YmxvZy5lYWxsaW9uLmNvbQ==',
+  // 新增白名单（使用 base64 编码）
+  'ZXdhZGF3ZGF3Lm5ldGxpZnkuYXBw',
+  'd3UyMDgzLm5ldGxpZnkuYXBw'
     ];
     var encodedRedirectUrl = 'aHR0cHM6Ly93d3cuZWFsbGlvbi5jb20=';
 
+    // try to decode base64, but if the entry is a plain string, return as-is
     function decodeBase64(encodedStr) {
-      return atob(encodedStr);
+      try {
+        return atob(encodedStr);
+      } catch (e) {
+        return encodedStr;
+      }
     }
 
     var validDomains = encodedValidDomains.map(decodeBase64);
